@@ -1,0 +1,39 @@
+{
+    "menuItems": [
+        {
+            "title": "Home",
+            "icon": "bi-0-circle",
+            "route": "",
+            "children": []
+        },
+        {
+            "title": "Categories",
+            "icon": "bi-1-circle",
+            "route": "Categories",
+            "children": [
+                {"title": "Category1",
+                    "icon": "bi-1-circle-fill",
+                    "route": "Category1",
+                    "children": []
+                },
+                {"title": "Category2",
+                    "icon": "bi-2-circle-fill",
+                    "route": "Category2",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "title": "Menu Item1",
+            "icon": "bi-2-circle",
+            "route": "menuItem1",
+            "children": []
+        },
+        {
+            "title": "Menu Item2",
+            "icon": "bi-3-circle",
+            "route": "menuItem2",
+            "children": []
+        }
+    ]
+}
