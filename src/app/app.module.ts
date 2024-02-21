@@ -7,9 +7,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu/menu-item/menu-item.component';
 import { CommonPageComponent } from './common-page/common-page.component';
-import { SubPageComponent } from './sub-page/sub-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DropdownToggleDirective } from '../app/menu/dropdown-toggle.directive'
+import { DropdownToggleDirective } from '../app/menu/dropdown-toggle.directive';
+import { NestedMenuComponent } from '../app/menu/nested-menu/nested-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,9 @@ import { DropdownToggleDirective } from '../app/menu/dropdown-toggle.directive'
     MenuComponent,
     MenuItemComponent,
     CommonPageComponent,
-    SubPageComponent,
     PageNotFoundComponent,
-    DropdownToggleDirective
+    DropdownToggleDirective,
+    NestedMenuComponent
   ],
   imports: [
     BrowserModule,

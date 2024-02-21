@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, ROUTES, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RoutingService } from './routing.service';
+import config from '../assets/appConfig.json'
 
 let routes: Routes = [];
 
@@ -11,7 +12,7 @@ let routes: Routes = [];
   providers: [{
     provide: ROUTES,
     useFactory: (routingService: RoutingService): Routes => {
-      return [...routingService.getRoutes(), {path: '**', component: PageNotFoundComponent}];
+      return [...routingService.getRoutes(config.menuItems), {path: '**', component: PageNotFoundComponent}];
     },
     deps: [RoutingService],
     multi:true

@@ -1,14 +1,13 @@
-<li class="nav-item" [ngClass]="{'dropdown': hasChildren(item)}">
-    <a class="nav-link" routerLink="{{item.route}}" appDropdownToggle [childrenqQantity]="item.children.length">
-        <i class="bi" [ngClass]="item.icon"></i>
+<li class="nav-item"
+    [ngClass]="{'dropdown': hasChildren(item)}"
+    (mouseenter)="onHover($event)"
+    (mouseleave)="onBlur($event)">
+    <a routerLink="{{currentRoute}}"
+       appDropdownToggle
+       [childrenqQantity]="item.children.length"
+       [ngClass]="parentRoute ? 'dropdown-item' : 'nav-link'">
+       <i class="bi" [ngClass]="item.icon"></i>
         {{item.title}}
     </a>
-    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-        <li *ngFor="let itemChild of item.children">
-            <a class="dropdown-item" routerLink="{{item.route}}/{{itemChild.route}}" aria-current="page" href="#">
-                <i class="bi" [ngClass]="itemChild.icon"></i>
-                {{itemChild.title}}
-            </a>
-        </li>
-    </ul>
+    <app-nested-menu *ngIf="item.children.length" [menuItems]="item.children" [parentRoute]="currentRoute"></app-nested-menu>
 </li>

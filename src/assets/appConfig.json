@@ -1,4 +1,5 @@
 {
+    "minDesktopWidth": 992,
     "menuItems": [
         {
             "title": "Home",
@@ -7,18 +8,18 @@
             "children": []
         },
         {
-            "title": "Categories",
+            "title": "Categories1",
             "icon": "bi-1-circle",
-            "route": "Categories",
+            "route": "Categories1",
             "children": [
-                {"title": "Category1",
+                {"title": "Category1_1",
                     "icon": "bi-1-circle-fill",
-                    "route": "Category1",
+                    "route": "Category1_1",
                     "children": []
                 },
-                {"title": "Category2",
+                {"title": "Category1_2",
                     "icon": "bi-2-circle-fill",
-                    "route": "Category2",
+                    "route": "Category1_2",
                     "children": []
                 }
             ]
@@ -34,6 +35,40 @@
             "icon": "bi-3-circle",
             "route": "menuItem2",
             "children": []
+        },
+        {
+            "title": "Categories2",
+            "icon": "bi-4-circle",
+            "route": "Categories2",
+            "children": [
+                {"title": "Category2_1",
+                    "icon": "bi-1-circle-fill",
+                    "route": "Category2_1",
+                    "children": []
+                },
+                {"title": "Category2_2",
+                    "icon": "bi-2-circle-fill",
+                    "route": "Category2_2",
+                    "children": [
+                        {"title": "Category2_2_1",
+                            "icon": "bi-1-square-fill",
+                            "route": "Category2_2_1",
+                            "children": []
+                        },
+                        {"title": "Category2_2_2",
+                            "icon": "bi-2-square-fill",
+                            "route": "Category2_2_2",
+                            "children": [
+                                {"title": "Category2_2_2_2",
+                                    "icon": "bi-1-square-fill",
+                                    "route": "Category2_2_2_2",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
