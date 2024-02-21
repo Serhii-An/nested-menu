@@ -59,9 +59,9 @@
                             "icon": "bi-2-square-fill",
                             "route": "Category2_2_2",
                             "children": [
-                                {"title": "Category2_2_2_2",
+                                {"title": "Category2_2_2_1",
                                     "icon": "bi-1-square-fill",
-                                    "route": "Category2_2_2_2",
+                                    "route": "Category2_2_2_1",
                                     "children": []
                                 }
                             ]
